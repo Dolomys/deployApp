@@ -1,0 +1,110 @@
+@import '../../global.scss';
+
+.singleSpot {
+
+    .spotContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+
+        img {
+            width: 98%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        .adminOptions {
+            display: flex;
+            justify-content: space-around;
+
+            .confirmChanges {
+                margin-left: 2em;
+                border: none;
+                padding: 5px;
+                border-radius: 7px;
+                background-color: green;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        
+        .selectMode {
+            display: flex;
+            color: lightgray;
+            align-items: center;
+            > * {
+                margin: 1em;
+                cursor: pointer;
+            }
+           
+            .actif {
+                margin: 1em;
+                color: $secondColor;
+                font-size: 20px;
+            }
+        }
+        
+        .resumeContent {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .resumeInfos {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                .spotInfos {
+                    display: flex;
+                    align-items: flex-end;
+                    
+        
+                    .icon {
+                        color: $secondColor;
+                        font-size: 1.5em;
+                        
+                    }
+        
+                    div {
+                        display: flex;
+                        flex-direction: column;
+        
+                        .title {
+                            color: lightgray;
+                        }
+        
+                        .number {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .like {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5em;
+                    color: #ff3e3e;
+                    padding: 10px;
+                    transition: all 1s ease;
+                }
+            }
+
+           
+            .spotDesc {
+                margin-top: 2em;
+            }
+
+        }
+      
+        
+    }
+ 
+}

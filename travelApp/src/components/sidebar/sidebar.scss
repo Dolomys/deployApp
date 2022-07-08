@@ -1,0 +1,128 @@
+@import '../../global.scss';
+
+.sidebar {
+    width: 15%;
+    margin-left: 10px;
+    min-height: 100vh;
+    background-color: white;
+    border-right: 1px solid rgb(215, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+    @include mobile {
+        display: none;
+    }
+    
+    &.actif {
+
+        @include mobile {
+            display: block;
+            min-width: 100%;
+            border: none;
+            margin-left: 0;
+            font-size: 30px;
+        }
+
+    }
+
+    .link {
+        color: black;
+        text-decoration: none;
+    }
+
+    .icon {
+        margin-right: 10px;
+        color: gray;
+        font-size: 18px;
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+
+    .top {
+        padding-left: 10px;
+        margin-top: 10px;
+
+
+        .photoAndClose {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include mobile {
+                margin: 1em 1em 0 0;
+            }
+
+            .topImage {
+                width: 3em;
+                height: 3em;
+                border-radius: 50%;
+                object-fit: cover;
+                overflow: hidden;
+          }
+          
+          .topTitle {
+           
+            .dot {
+                font-size: 1.5em;
+                color: $secondColor;
+            }
+          }
+
+            .closeIcon {
+                color: lightgray;
+                font-size: 50px;
+                cursor: pointer;
+                display: none;
+
+                @include mobile {
+                    display: block;
+                }
+            }    
+        }
+      
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            .title {
+                font-weight: bold;
+                color: gray;
+                margin-top: 2em;
+
+                &.admin {
+                    color: #ff3e3e;
+                }
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: lightgray;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        .socials {
+            display: flex;
+            align-items: center;
+            
+            .socialIcon {
+                margin: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+//================ GLOBAL CSS =====================================//
+
+$mainColor: black;
+$secondColor: #FA9533;
+
+// Mobile media query
+$width: 768px;
+@mixin mobile {
+    @media (max-width : #{$width}){
+        @content
+    }
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $mainColor;
+}
+
+
+.App {
+    display: flex;
+    height: 100vh;
+    background-color: #F9F9F9;
+    
+    // Flex for everything exept SideBar
+    > *:not(:first-child) {
+        flex: 2;
+
+        @include mobile {
+            overflow-x:hidden
+        }
+    }
+}
+

@@ -1,0 +1,69 @@
+@import '../../../global.scss';
+
+.account {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .accountTop {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        img  {
+            width: 15em;
+            height: 15em;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .fileInput {
+            cursor: pointer;
+            margin-top: 1em;
+            display: flex;
+            align-items: center;
+
+            .inputIcon {
+                margin-left: 10px;
+                color: $secondColor;
+                font-size: 2em;
+            }
+        }
+        .fileSubmit{
+            cursor: pointer;
+            color: white;
+            padding: 7px;
+            border-radius: 7px;
+            background-color: rgb(5, 151, 5);
+        }
+
+    }
+
+    .accountCenter {
+        align-self: center;
+        
+        .selectMode {
+            display: flex;
+            color: lightgray;
+            align-items: center;
+            > * {
+                margin: 1em;
+                cursor: pointer;
+            }
+           
+            .actif {
+                margin: 1em;
+                color: $secondColor;
+                font-size: 20px;
+            }
+        }
+    }
+
+}

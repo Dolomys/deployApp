@@ -1,0 +1,33 @@
+@import '../../global.scss';
+
+.comments {
+   width: 60%;
+
+   .submitBtn {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid;
+    background-color: $secondColor;
+   }
+
+   .commentList {
+    display: flex;
+    flex-direction: column;
+
+    .comment {
+        
+        display: flex;
+        align-items: center;
+
+        .commentAvatar > img {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 2em 1em
+        }
+    }
+   }
+}

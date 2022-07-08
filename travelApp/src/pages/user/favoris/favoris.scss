@@ -1,0 +1,9 @@
+.favoris {
+    display: flex;
+    flex-direction: column;
+
+    .favorisTitle {
+        text-align: center;
+        margin-top: 2em;
+    }
+}

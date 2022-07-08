@@ -1,0 +1,39 @@
+@import '../../../global.scss';
+
+.add {
+    display: flex;
+    flex-direction: column;
+
+    .addContainer {
+        margin: 2em;
+    }
+
+    .Imagecontainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        .writeImg {
+            width: 98%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+    }
+
+    .submitBtn {
+        cursor: pointer;
+        background-color: $secondColor;
+        color: white;
+        border: 1px solid $secondColor;
+        padding: 10px;
+        border-radius: 7px;
+        margin: 1em 0;
+    }
+
+    .error {
+        color: red;
+        font-size: 24px;
+        font-weight: 800;
+    }
+    
+}

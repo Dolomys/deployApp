@@ -1,0 +1,107 @@
+@import '../../../global.scss';
+
+
+.mySpots {
+
+    h1 {
+        text-align: center;
+        margin: 2em;
+    }
+
+    .spotsContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        .singleSpot {
+                display: flex;
+                border: 1px solid white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 0px 25px 40px 25px;
+                background-color: white;
+    
+            a {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+          
+                .postImg{
+                    width: 180px;
+                    height: 120px;
+                    object-fit: cover;
+                    border-radius: 7px;
+                }
+                
+                .postInfo {
+                    display: flex;
+                    align-items: center;
+                    flex: 2;
+                    justify-content: space-around;
+                }
+                
+                .postCat {
+                    font-family: "Varela Round", "sans-serif";
+                    font-size: 11px;
+                    color: #be9656 !important;
+                    line-height: 20px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                
+                .postTitle {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 24px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: black;
+                }
+                
+                .postDate {
+                    font-family: 'Lora', serif;
+                    font-style: italic;
+                    font-size: 13px;
+                    color: #999;
+                }
+    
+              .spotStatus {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                > *::first-letter {
+                    text-transform: capitalize;
+                }
+
+                .pending {
+                    background-color: orange;
+                    padding: 10px;
+                    border-radius: 5px;
+                    
+                }
+                
+                .published {
+                    background-color:green;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+
+                .deleted {
+                    background-color:red;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                
+
+              }
+                
+            
+                .link, .link:hover, .link:focus, .link:active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
